@@ -103,10 +103,10 @@
         Sym {
             display-name = "Sym";
             bindings = <
-                &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT  &kp DQT
-                &kp SLASH  &kp EQUAL  &kp PLUS  &kp MINUS   &kp ASTERISK       &trans     &trans         &trans           &trans   &trans
-&studio_unlock  &trans     &trans     &trans    &trans      &kp PRINTSCREEN    &kp UNDER  &kp EQUAL      &trans           &trans   &kp BACKSLASH  &kp HOME
-                                      &trans    &trans      &trans             &trans     &trans         &trans
+                &kp EXCL       &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT    &kp DQT
+                &kp SLASH      &kp EQUAL  &kp PLUS  &kp MINUS   &kp ASTERISK       &trans     &trans         &kp TILDE        &kp SLASH  &kp GRAVE
+&studio_unlock  &kp BACKSLASH  &trans     &trans    &trans      &kp PRINTSCREEN    &kp UNDER  &kp EQUAL      &trans           &trans     &kp BACKSLASH  &kp HOME
+                                          &trans    &kp LSHFT   &trans             &trans     &trans         &trans
             >;
         };
 
