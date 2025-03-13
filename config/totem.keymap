@@ -83,10 +83,10 @@
         Base {
             display-name = "Base";
             bindings = <
-              &kp APOSTROPHE  &kp COMMA   &kp DOT              &kp P         &kp Y        &kp F    &kp G        &kp C        &kp R       &kp L
-              &hm LGUI A      &hm LALT O  &hm LCTRL E          &hm LSHIFT U  &kp I        &kp D    &hm RSHFT H  &hm RCTRL T  &hm RALT N  &hm RGUI S
-&lt 3 ESCAPE  &kp SEMICOLON   &kp Q       &kp J                &kp K         &kp X        &kp B    &kp M        &kp W        &kp V       &kp Z       &kp MINUS
-                                          &mt LCTRL BACKSPACE  &lt 1 TAB     &kp SPACE    &kp RET  &lt 2 BSPC   &kp TILDE
+              &kp APOSTROPHE  &kp COMMA   &kp DOT           &kp P         &kp Y        &kp F    &kp G        &kp C        &kp R       &kp L
+              &hm LGUI A      &hm LALT O  &hm LCTRL E       &hm LSHIFT U  &kp I        &kp D    &hm RSHFT H  &hm LCTRL T  &hm RALT N  &hm RGUI S
+&lt 3 ESCAPE  &kp SEMICOLON   &kp Q       &kp J             &kp K         &kp X        &kp B    &kp M        &kp W        &kp V       &kp Z       &kp MINUS
+                                          &mt LCTRL DELETE  &lt 1 TAB     &kp SPACE    &kp RET  &lt 2 BSPC   &kp TILDE
             >;
         };
 
@@ -103,10 +103,10 @@
         Sym {
             display-name = "Sym";
             bindings = <
-                &kp EXCL       &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT    &kp DQT
-                &kp SLASH      &kp EQUAL  &kp PLUS  &kp MINUS   &kp ASTERISK       &trans     &trans         &kp TILDE        &kp SLASH  &kp GRAVE
-&studio_unlock  &kp BACKSLASH  &trans     &trans    &trans      &kp PRINTSCREEN    &kp UNDER  &kp EQUAL      &trans           &trans     &kp BACKSLASH  &kp HOME
-                                          &trans    &kp LSHFT   &trans             &trans     &trans         &trans
+                &kp EXCL       &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT    &kp DQT
+                &kp SLASH      &kp EQUAL  &kp PLUS   &kp MINUS   &kp ASTERISK       &trans     &trans         &kp TILDE        &kp SLASH  &kp GRAVE
+&studio_unlock  &kp BACKSLASH  &trans     &trans     &trans      &kp PRINTSCREEN    &kp UNDER  &kp EQUAL      &trans           &trans     &kp BACKSLASH  &kp HOME
+                                          &kp LCTRL  &kp LSHFT   &trans             &trans     &trans         &kp RCTRL
             >;
         };
 
