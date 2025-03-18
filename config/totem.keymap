@@ -40,7 +40,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             global-quick-tap;
@@ -96,17 +96,17 @@
               &kp TILDE       &kp HOME   &kp UP_ARROW  &kp END    &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
               &kp LEFT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
 &kp LEFT_ALT  &kp LEFT_WIN    &kp MINUS  &trans        &kp PLUS   &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp PLUS
-                                         &trans        &trans     &trans      &trans    &kp COLON     &kp LCTRL
+                                         &trans        &trans     &trans      &kp LALT  &kp COLON     &kp LCTRL
             >;
         };
 
         Sym {
             display-name = "Sym";
             bindings = <
-                &kp EXCL       &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT    &kp DQT
-                &kp SLASH      &kp EQUAL  &kp PLUS   &kp MINUS   &kp ASTERISK       &trans     &trans         &kp TILDE        &kp SLASH  &kp GRAVE
-&studio_unlock  &kp BACKSLASH  &trans     &trans     &trans      &kp PRINTSCREEN    &kp UNDER  &kp EQUAL      &trans           &trans     &kp BACKSLASH  &kp HOME
-                                          &kp LCTRL  &kp LSHFT   &trans             &trans     &trans         &kp RCTRL
+                &kp EXCL       &kp AT                &kp HASH   &kp DOLLAR             &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT    &kp DQT
+                &kp SLASH      &kp EQUAL             &kp PLUS   &kp MINUS              &kp ASTERISK       &trans     &kp GRAVE      &kp TILDE        &kp SLASH  &trans
+&studio_unlock  &kp BACKSLASH  &kp LEFT_PARENTHESIS  &trans     &kp RIGHT_PARENTHESIS  &kp PRINTSCREEN    &kp UNDER  &kp EQUAL      &trans           &trans     &kp BACKSLASH  &kp HOME
+                                                     &kp LCTRL  &kp LSHFT              &trans             &trans     &trans         &kp RCTRL
             >;
         };
 
