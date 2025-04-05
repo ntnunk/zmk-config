@@ -8,7 +8,7 @@ include:
   - board: seeeduino_xiao_ble
     shield: totem_dongle dongle_display
     artifact-name: totem_central_dongle
-    snippet: studio-rpc-usb-uart
+    snippet: common-config studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: seeeduino_xiao_ble
     shield: settings_reset
