@@ -34,8 +34,8 @@
 &xiao_i2c {
     status = "okay";
     
-    oled: sinowealth,sh1106 {
-        compatible = "solomon,ssd1306fb";
+    oled: sh1106 {
+        compatible = "solomon,sh1106;
         reg = <0x3c>;
         width = <128>;
         height = <64>;

@@ -1,10 +1,13 @@
 include:
   - board: seeeduino_xiao_ble
     shield: totem_left
+    artifact-name: totem_left
   - board: seeeduino_xiao_ble
     shield: totem_right
+    artifact-name: totem_right
   - board: seeeduino_xiao_ble
     shield: totem_dongle dongle_display
+    artifact-name: totem_central_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: seeeduino_xiao_ble
