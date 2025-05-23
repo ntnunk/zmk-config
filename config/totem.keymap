@@ -48,6 +48,14 @@
 
             require-prior-idle-ms = <150>;
         };
+
+        td_cw: td_cw {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_CW";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
+        };
     };
 
     combos {
@@ -77,6 +85,32 @@
             bindings = <&kp TAB>;
             key-positions = <11 12 10>;
         };
+
+        win_ws_left {
+            bindings = <&win_ws_left>;
+            key-positions = <20 10>;
+        };
+
+        win_ws_right {
+            bindings = <&win_ws_right>;
+            key-positions = <19 31>;
+        };
+    };
+
+    macros {
+        win_ws_right: win_ws_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(RIGHT))>;
+            label = "WIN_WS_RIGHT";
+        };
+
+        win_ws_left: win_ws_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(LEFT))>;
+            label = "WIN_WS_LEFT";
+        };
     };
 
     keymap {
@@ -85,10 +119,10 @@
         Base {
             display-name = "Base";
             bindings = <
-              &kp APOSTROPHE  &kp COMMA   &kp DOT           &kp P             &kp Y        &kp F           &kp G             &kp C          &kp R       &kp L
-              &hm LGUI A      &hm LALT O  &hm LCTRL E       &hm LEFT_SHIFT U  &kp I        &kp D           &hm LEFT_SHIFT H  &hm LCTRL T    &hm RALT N  &hm RGUI S
-&lt 3 ESCAPE  &kp SEMICOLON   &kp Q       &kp J             &kp K             &kp X        &kp B           &kp M             &kp W          &kp V       &kp Z       &kp RETURN
-                                          &mt LCTRL DELETE  &lt 1 TAB         &kp SPACE    &sk LEFT_SHIFT  &lt 2 UNDER       &kp BACKSPACE
+              &kp APOSTROPHE  &kp COMMA   &kp DOT           &kp P             &kp Y        &kp F   &kp G             &kp C          &kp R       &kp L
+              &hm LGUI A      &hm LALT O  &hm LCTRL E       &hm LEFT_SHIFT U  &kp I        &kp D   &hm LEFT_SHIFT H  &hm LCTRL T    &hm RALT N  &hm RGUI S
+&lt 3 ESCAPE  &kp SEMICOLON   &kp Q       &kp J             &kp K             &kp X        &kp B   &kp M             &kp W          &kp V       &kp Z       &kp RETURN
+                                          &mt LCTRL DELETE  &lt 1 TAB         &kp SPACE    &td_cw  &lt 2 UNDER       &kp BACKSPACE
             >;
         };
 
@@ -97,7 +131,7 @@
             bindings = <
               &kp TILDE       &kp HOME   &kp UP_ARROW  &kp END    &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
               &kp LEFT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp LEFT_ALT  &kp LEFT_WIN    &kp MINUS  &kp PIPE      &kp PLUS   &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp LCTRL
+&kp LEFT_ALT  &kp LEFT_WIN    &kp MINUS  &kp PIPE      &kp PLUS   &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp PERIOD
                                          &trans        &trans     &trans      &kp LALT  &kp COLON     &kp LCTRL
             >;
         };
