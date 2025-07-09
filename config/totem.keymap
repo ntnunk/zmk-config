@@ -138,10 +138,10 @@
         Sym {
             display-name = "Sym";
             bindings = <
-                &kp EXCL       &kp AT                &kp HASH    &kp DOLLAR             &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK   &kp SQT     &kp DQT
-                &kp SLASH      &kp EQUAL             &kp PLUS    &kp MINUS              &kp ASTERISK       &kp TILDE  &kp UNDER      &kp GRAVE         &kp SLASH   &kp QUESTION
-&studio_unlock  &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp PERIOD  &kp RIGHT_PARENTHESIS  &kp PRINTSCREEN    &trans     &kp C_PREV     &kp C_PLAY_PAUSE  &kp C_NEXT  &kp BACKSLASH  &kp HOME
-                                                     &kp LCTRL   &kp LSHFT              &trans             &trans     &trans         &kp RCTRL
+                &kp EXCL       &kp AT         &kp HASH    &kp DOLLAR        &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK   &kp SQT     &kp DQT
+                &kp SLASH      &kp EQUAL      &kp PLUS    &kp MINUS         &kp ASTERISK       &kp TILDE  &kp UNDER      &kp GRAVE         &kp SLASH   &kp QUESTION
+&studio_unlock  &kp BACKSLASH  &kp LESS_THAN  &kp PERIOD  &kp GREATER_THAN  &kp PRINTSCREEN    &trans     &kp C_PREV     &kp C_PLAY_PAUSE  &kp C_NEXT  &kp BACKSLASH  &kp HOME
+                                              &kp LCTRL   &kp LSHFT         &trans             &trans     &trans         &kp RCTRL
             >;
         };
 
