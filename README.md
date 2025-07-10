@@ -1,11 +1,7 @@
-# eiga's zmk-config
+# zmk-config
 
 ### Table of contents
-- Branches
-    - [Corne](#corne)
-    - [Charybdis](#charybdis)
-        - [Module documentation](#module-documentation)
-    - [TOTEM](#totem)
+- [TOTEM](#totem)
 - [Dongle Flashing](#dongle-flashing)
 - [ZMK Keymap Editor](#zmk-keymap-editor)
 - [Shops and Useful links](#shops-and-other-useful-links)
@@ -21,30 +17,7 @@ Additionally, this repository contains alternative configurations meant to be us
 > [!NOTE]  
 > These configurations are meant to be used with builds that are identical to the ones featured in the videos, otherwise they should be used as reference only.
 
-## Corne
-
-- [Corne](https://github.com/eigatech/zmk-config/tree/corne)
-- [Corne Dongle](https://github.com/eigatech/zmk-config/tree/corne-dongle)
-
-> [!NOTE]  
-> Shield is configured for an earlier revision of Pete Johanson's [Corne Ultralight PCB](https://github.com/petejohanson/crkbd/tree/board/corne-ultralight), with nice!view support.
-
-## Charybdis
-
-- [Charybdis](https://github.com/eigatech/zmk-config/tree/charybdis-3.5)
-- [Charybdis Dongle](https://github.com/eigatech/zmk-config/tree/charybdis-dongle)
-
 ### Module documentation
-
-- Charybdis
-    - [ZMK PMW3610 Driver](https://github.com/inorichi/zmk-pmw3610-driver)
-- Charybdis Dongle
-    - [ZMK Split Peripheral Input Relay](https://github.com/badjeff/zmk-split-peripheral-input-relay)
-    - [ZMK Input Behavior Listener](https://github.com/badjeff/zmk-input-behavior-listener)
-    - [ZMK PMW3610 Driver](https://github.com/badjeff/zmk-pmw3610-driver)
-
-> [!NOTE]  
-> Charybdis uses Inorichi's PMW3610 driver, while Charybdis Dongle leverages multiple modules written by badjeff.
 
 ## TOTEM
 
@@ -82,4 +55,3 @@ Kits, Prebuilts, Parts:
 
 Documentation and guides:
 - [ZMK Firmware Documentation](https://zmk.dev/docs)
-- [Eren's Wireless Charybdis Mini Guide](https://github.com/erenatas/charybdis-wireless-3x6)
